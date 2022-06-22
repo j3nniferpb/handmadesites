@@ -1,0 +1,58 @@
+p {
+  background-color:#f0f9fd;
+  font-size:20px;
+  text-align: center;
+  width:500px center;
+  font-family:arial;
+}
+
+body {
+  background-image: url(https://64.media.tumblr.com/5106de6540e08ccf24851ec267dc3476/33dde391d59caa2d-1e/s1280x1920/cf3bdba396d4d3765d85720393d1b909ecabc563.gifv);
+  background-repeat:no-repeat;
+  cursor:crosshair;
+  background-size: cover;
+}
+h1 {
+  text-align:center;
+  font:comic
+}
+h2 {
+  text-align:center;
+  text-decoration: overline;
+}
+
+ul {
+  background-color:lightgreen;
+}
+
+a {
+  color:red;
+  cursor:cell;
+  text-decoration-color:darkred;
+  text-decoration-line:dotted;
+  text-decoration-thickness:4px;
+}
+
+a:hover  {
+  color:green;
+  text-decoration:none;
+}
+
+a:visited {
+  color:purple;
+
+}
+
+/**denote classes with a period before class name
+denote ID's with a # before ID name**/
+.spesh {
+  color:purple;
+  font-size:60px;
+  border:dotted;
+  text-decoration: none;
+}
+
+.good  {
+  border:3px double lightblue;
+  padding-top:20px;
+}
