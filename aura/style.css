@@ -1,0 +1,532 @@
+. {
+    overflow:hidden;
+}
+
+
+html {
+    max-width:100vw;
+    max-height:100vh;
+    overflow:hidden;
+}
+
+body {
+    cursor:cell;
+    background:rgb(28, 47, 86);
+}
+
+p {
+    font-family:cursive;
+    color:azure;
+    z-index:5;
+}
+
+.draggable {
+    position: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor:grab;
+}
+
+.draggable.hover {
+    cursor:grab;
+}
+
+.draggable.click {
+    cursor:grab;
+}
+
+.random-list {
+    width:100%; 
+    height:100%;
+    position:relative;
+  }
+
+.ny1 {
+    position:absolute; 
+    padding:5px;
+    display:none;
+    width:250px;
+    top:15%;
+    left:35%;
+}
+
+.ny1.show {
+    display:block;
+}
+
+.boston1 {
+    position:absolute;
+    padding:5px;
+    display:none;
+    width:200px;
+    top:80%;
+    right:10%;
+}
+
+.boston1.show {
+    display:block;
+}
+
+.nj1 {
+    position:absolute;
+    padding:5px;
+    display:none;
+    width:300px;
+    top:50vh;
+    right:30vw;
+}
+
+.nj1.show {
+    display:block;
+}
+
+.rva1 {
+    position:absolute;
+    padding:10px;
+    display:none;
+    width:230px;
+    top:60vh;
+    left:15vw;
+}
+
+.rva1.show {
+    display:block;
+}
+
+.dc1 {
+    position:absolute;
+    padding:10px;
+    display:none;
+    width:230px;
+    top:10vh;
+    left:10vw;
+}
+
+.dc1.show {
+    display:block;
+}
+
+.intro2 {
+    font-family:arial;
+    font-size:12px;
+    display:none;
+}
+
+.newyork {
+    font-family:arial;
+    font-size:20px;
+    font-weight:bold;
+    display:none;
+    z-index:5;
+}
+
+#intro {
+    font-family:cursive;
+    font-size:30px;
+    font-style:bold;
+    position:absolute;
+    margin-top:5%;
+    margin-left:50%;
+    z-index:6;
+    padding:5px;
+}
+
+#intro:hover {
+    background:yellowgreen;
+    color:darkred; 
+    transform:scale(1.1);
+    font-style:oblique;
+    margin-bottom:5px;
+    z-index:6;
+}
+
+#intro:hover .intro2 {
+    display:block;
+    z-index:6;
+}
+
+#ny_metro {
+    display:block;
+    width:240px;
+    top:78%;
+    left:20%;
+    z-index:4;
+    padding:20px;
+}
+
+#ny_metro:hover {
+    opacity:.75;
+    cursor:grab;
+    transform:scale(1.2)rotate(-20deg);
+}
+
+#ny_metro:hover .newyork {
+    display:block;
+}
+
+#nymsg {
+    left:40%;
+    position:relative;
+}
+
+#boston_charlie {
+    display:block;
+    width:250px;
+    top:10%;
+    right:12%;
+    z-index:4;
+    padding:15px;
+}
+
+#boston_charlie:hover {
+    opacity:.75;
+    cursor:grab;
+    transform:scale(1.2)rotate(6deg);
+}
+
+#bstnmsg {
+    top:40vh;
+    left:70vw;
+    position:relative;
+    z-index:2;
+}
+
+#united {
+    display:block;
+    width:300px;
+    top:40%;
+    right:40%;
+    padding:15px;
+    z-index:4;
+}
+
+#united:hover {
+    opacity:.85;
+    cursor:grab;
+    transform:scale(1.2)rotate(-5deg);
+}
+
+#njmsg {
+    z-index:2;
+    top:90vh;
+}
+
+#amtrak {
+    display:block;
+    width:300px;
+    z-index:4;
+    padding:10px;
+    transform:rotate(30deg);
+}
+
+#amtrak:hover {
+    opacity:.75;
+    cursor:grab;
+    transform:scale(1.2) rotate(25deg);
+}
+
+#dcmsg {
+    top:5%;
+    left:15%;
+}
+
+#cash {
+    display:block;
+    width:220px;
+    z-index:4;
+    padding:10px;
+    right:40px;
+    bottom:50px;
+}
+
+#cash:hover {
+    opacity:.75;
+    cursor:grab;
+    transform:scale(1.2) rotate(5deg);
+}
+
+#rvamsg {
+    left:2%;
+    bottom:5%;
+}
+
+/*MISC PICKED UP ITEMS*/
+
+#nickel {
+    width:100px;
+    position:absolute;
+    left:50vw;
+    bottom:90vh;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:10s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(3deg);
+}
+
+#nickel:hover {
+    transform:scale(.8);
+}
+
+#gum {
+    width:220px;
+    position:absolute;
+    left:20vw;
+    bottom:40vh;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:20s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(3deg);
+}
+
+#gum:hover {
+    transform:scale(.8);
+}
+
+#lighter {
+    width:250px;
+    position:absolute;
+    right:20vw;
+    bottom:25vh;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:30s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-99deg);
+}
+
+#lighter:hover {
+    transform:scale(.8) rotate(-80deg);
+}
+
+#elephant {
+    width:375px;
+    position:absolute;
+    right:40vw;
+    top:70vh;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:40s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-4deg);
+}
+
+#elephant:hover {
+   transform: scale(.8);
+}
+
+#mask {
+    width:500px;
+    position:absolute;
+    left:-202px;
+    top:500px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:50s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(62deg);
+}
+
+#mask:hover {
+    transform:scale(.8) rotate(58deg);
+}
+
+#penny {
+    width:80px;
+    position:absolute;
+    left:40px;
+    top:300px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:14s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(62deg);
+}
+
+#penny:hover {
+    transform:scale(.8);
+}
+
+#penny2 {
+    width:80px;
+    position:absolute;
+    right:400px;
+    bottom:50px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:28s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-15deg);
+}
+
+#penny2:hover {
+    transform:scale(.8);
+}
+
+#cigbutt {
+    width:170px;
+    position:absolute;
+    right:300px;
+    top:350px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:60s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-80deg);
+}
+
+#cigbutt:hover {
+    transform:scale(.8) rotate(-72deg);
+}
+
+#ring {
+    width:100px;
+    position:absolute;
+    left:20px;
+    top:600px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:55s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-15deg);
+}
+
+#ring:hover {
+    transform:scale(.8);
+}
+
+#chain {
+    width:650px;
+    position:absolute;
+    right:-200px;
+    top:-100px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:70s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-15deg);
+}
+
+#chain:hover {
+    transform:scale(.8) rotate(-10deg);
+}
+
+#redbull {
+    width:700px;
+    position:absolute;
+    left:2px;
+    top:-400px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:15s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-15deg);
+}
+
+#redbull:hover {
+    transform:scale(.8) rotate(-10deg);
+}
+
+#pep {
+    width:150px;
+    position:absolute;
+    right:310px;
+    top:300px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:78s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(-15deg);
+}
+
+#pep:hover {
+    transform:rotate(-5deg) scale(.8);
+}
+
+#pep2 {
+    width:150px;
+    position:absolute;
+    right:370px;
+    top:330px;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:4s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(0deg);
+
+}
+
+#pep2:hover {
+    transform:rotate(8deg) scale(.8);
+}
+
+#sharpie {
+    width:450px;
+    position:absolute;
+    right:2vw;
+    top:90vh;
+    z-index:3;
+    animation-name:appear;
+    animation-delay:4s;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    opacity:0;
+    transform:rotate(99deg);
+}
+
+#sharpie:hover {
+    transform:rotate(92deg) scale(.8);
+}
+
+@-webkit-keyframes appear {
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
