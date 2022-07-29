@@ -1,0 +1,36 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background-color:darkgreen;
+}
+
+.sidebar {
+  width: 400px;
+  min-height:500px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+  position:fixed;
+  top: 10;
+  right:-400px;
+  transition:.5s;
+}
+
+.active {
+  right:0;
+}
+
+button {
+  border:none;
+  font-family:comic;
+  font-size:30px;
+  background-color:mediumseagreen;
+}
+
+button:hover {
+  background-color:lightyellow;
+  cursor:crosshair;
+}

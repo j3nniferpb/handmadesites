@@ -1,0 +1,27 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background:peru;
+}
+
+.shapeshifter {
+  background:mediumaquamarine;
+  width:100px;
+  height:100px;
+  position:absolute;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition: transform 2s, border-radius 5s, background 7s;
+  cursor:cell;
+}
+
+/**hover behind the colon is a 'pseudoclass'**/
+.shapeshifter:hover {
+  background: powderblue;
+  border-radius:0;
+  transform: translate(-50%, -50%) scale(2);
+}

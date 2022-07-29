@@ -1,0 +1,64 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background-color:seagreen;
+}
+
+img {
+  max-width:100%;
+}
+
+h1 {
+  color:rosybrown;
+}
+
+.header {
+  background:lavender;
+  text-align:center;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.main-container {
+  display:flex;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.main-container div {
+  background:lavender;
+  padding:10px;
+}
+
+.nav {
+  background: lavender;
+}
+
+.center {
+  background: lavender;
+}
+
+.right {
+  background: lavender;
+}
+
+@media screen and (max-width:900px) {
+  body {
+    background:orchid;
+  }
+  h1 {
+    color:linen;
+  }
+}
+
+@media screen and (max-width:600px) {
+  body {
+    background:lightsalmon;
+  }
+  h1 {
+    color:lightcyan;
+    font-size:30px;
+  }
+}

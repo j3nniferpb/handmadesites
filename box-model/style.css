@@ -1,0 +1,33 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background-color:pink;
+  margin:0;
+
+}
+
+.content {
+  background-color:lightyellow;
+  width:100px;
+  height:100px;
+  padding:30px 40px 20px 40px;
+/**values in order: top - right - bottom - left
+  or padding: 30px 40px (top/bottom - left/right)**/
+  border: 10px solid darkgreen;
+  margin:50px;
+}
+
+.border {
+  background-color:red;
+  width:100px;
+  height:100px;
+  padding:30px 40px 20px 40px;
+  border:10px dotted purple;
+  margin:50px;
+  box-sizing:border-box;
+  bottom: 30px;
+  right: 90px;
+  position:relative;
+}

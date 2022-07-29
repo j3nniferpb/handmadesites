@@ -1,0 +1,1470 @@
+html {
+  max-height:100%;
+  max-width:100%
+}
+
+body {
+  background: linear-gradient(-45deg, #639457, #a8bf91, #c7779b, #adc920);
+  max-height:100%;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  cursor:cell;
+}
+
+.whole {
+  position: fixed; /* Sit on top of the page content */
+  opacity:0;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:black; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: crosshair; /* Add a pointer on hover */
+    animation-name: fadeout;
+    animation-duration: 30s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;
+    animation-delay:30s;
+}
+
+.sun {
+  position:absolute;
+  top:30px;
+  left:400px;
+  max-width:200px;
+  animation-name:sun;
+animation-duration:30s;
+animation-iteration-count:infinite;
+}
+
+.runner {
+  position:fixed;
+  max-width:500px;
+  max-height:40px;
+  z-index:10;
+  top:90%;
+  left:38vw;
+  align-content:center;
+}
+
+.cloud1 {
+  position:absolute;
+  top:30px;
+  left:200px;
+  max-width:200px;
+  animation-name:cloud;
+animation-duration:30s;
+animation-iteration-count:infinite;
+z-index:-1;
+}
+
+.cloud2 {
+  position:absolute;
+  top:80px;
+  right:-250px;
+  max-width:400px;
+  animation-name:cloud;
+  animation-duration:30s;
+  animation-iteration-count:infinite;
+}
+
+.cloud3 {
+  position:absolute;
+  top:100px;
+  left:10px;
+  max-width:400px;
+  animation-name:cloud;
+  animation-duration:30s;
+  animation-iteration-count:infinite;
+}
+
+.grass {
+  background:#004d00;
+  position:fixed;
+  left:-10px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass2 {
+  background:#004d00;
+  position:fixed;
+  left:-23px;
+  bottom:145px;
+  width:10px;
+  height:17px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass3 {
+  background:#004d00;
+  position:fixed;
+  left:-38px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass4 {
+  background:#004d00;
+  position:fixed;
+  left:-60px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass5 {
+  background:#004d00;
+  position:fixed;
+  left:-120px;
+  bottom:145px;
+  width:10px;
+  height:40px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass6 {
+  background:#004d00;
+  position:fixed;
+  left:-130px;
+  bottom:145px;
+  width:10px;
+  height:34px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass7 {
+  background:#004d00;
+  position:fixed;
+  left:-140px;
+  bottom:145px;
+  width:10px;
+  height:48px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass8 {
+  background:#004d00;
+  position:fixed;
+  left:-170px;
+  bottom:145px;
+  width:10px;
+  height:55px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass9 {
+  background:#004d00;
+  position:fixed;
+  left:-180px;
+  bottom:145px;
+  width:10px;
+  height:35px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass10 {
+  background:#004d00;
+  position:fixed;
+  left:-230px;
+  bottom:145px;
+  width:10px;
+  height:48px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass11 {
+  background:#004d00;
+  position:fixed;
+  left:-255px;
+  bottom:145px;
+  width:10px;
+  height:53px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass12 {
+  background:#004d00;
+  position:fixed;
+  left:-280px;
+  bottom:145px;
+  width:10px;
+  height:30px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass13 {
+  background:#004d00;
+  position:fixed;
+  left:-295px;
+  bottom:145px;
+  width:10px;
+  height:32px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass14 {
+  background:#004d00;
+  position:fixed;
+  left:-310px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass15 {
+  background:#004d00;
+  position:fixed;
+  left:-364px;
+  bottom:145px;
+  width:10px;
+  height:55px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass16 {
+  background:#004d00;
+  position:fixed;
+  left:200px;
+  bottom:145px;
+  width:10px;
+  height:55px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass17 {
+  background:#004d00;
+  position:fixed;
+  left:188px;
+  bottom:145px;
+  width:10px;
+  height:48px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass18 {
+  background:#004d00;
+  position:fixed;
+  left:170px;
+  bottom:145px;
+  width:10px;
+  height:65px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass19 {
+  background:#004d00;
+  position:fixed;
+  left:155px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass20 {
+  background:#004d00;
+  position:fixed;
+  left:-400px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass21 {
+  background:#004d00;
+  position:fixed;
+  left:-415px;
+  bottom:145px;
+  width:10px;
+  height:23px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass22 {
+  background:#004d00;
+  position:fixed;
+  left:-440px;
+  bottom:145px;
+  width:10px;
+  height:32px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass23 {
+  background:#004d00;
+  position:fixed;
+  left:-453px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass24 {
+  background:#004d00;
+  position:fixed;
+  left:-480px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass24 {
+  background:#004d00;
+  position:fixed;
+  left:-540px;
+  bottom:145px;
+  width:10px;
+  height:38px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass24 {
+  background:#004d00;
+  position:fixed;
+  left:-558px;
+  bottom:145px;
+  width:10px;
+  height:42px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass25 {
+  background:#004d00;
+  position:fixed;
+  left:-570px;
+  bottom:145px;
+  width:10px;
+  height:50px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass26 {
+  background:#004d00;
+  position:fixed;
+  left:-585px;
+  bottom:145px;
+  width:10px;
+  height:44px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass27 {
+  background:#004d00;
+  position:fixed;
+  left:-600px;
+  bottom:145px;
+  width:10px;
+  height:23px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass28 {
+  background:#004d00;
+  position:fixed;
+  left:-720px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass29 {
+  background:#004d00;
+  position:fixed;
+  left:-732px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass30 {
+  background:#004d00;
+  position:fixed;
+  left:-745px;
+  bottom:145px;
+  width:10px;
+  height:35px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass31 {
+  background:#004d00;
+  position:fixed;
+  left:-758px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass32 {
+  background:#004d00;
+  position:fixed;
+  left:-800px;
+  bottom:145px;
+  width:10px;
+  height:18px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass33 {
+  background:#004d00;
+  position:fixed;
+  left:-815px;
+  bottom:145px;
+  width:10px;
+  height:23px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass34 {
+  background:#004d00;
+  position:fixed;
+  left:-827px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass35 {
+  background:#004d00;
+  position:fixed;
+  left:-840px;
+  bottom:145px;
+  width:10px;
+  height:38px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grass36 {
+  background:#004d00;
+  position:fixed;
+  left:-880px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss37 {
+  background:#004d00;
+  position:fixed;
+  left:-920px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss38 {
+  background:#004d00;
+  position:fixed;
+  left:-935px;
+  bottom:145px;
+  width:10px;
+  height:18px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss39 {
+  background:#004d00;
+  position:fixed;
+  left:-948px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss40 {
+  background:#004d00;
+  position:fixed;
+  left:-960px;
+  bottom:145px;
+  width:10px;
+  height:58px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss41 {
+  background:#004d00;
+  position:fixed;
+  left:-975px;
+  bottom:145px;
+  width:10px;
+  height:40px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss42 {
+  background:#004d00;
+  position:fixed;
+  left:-1000px;
+  bottom:145px;
+  width:10px;
+  height:43px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss43 {
+  background:#004d00;
+  position:fixed;
+  left:-1013px;
+  bottom:145px;
+  width:10px;
+  height:15px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss44 {
+  background:#004d00;
+  position:fixed;
+  left:-1030px;
+  bottom:145px;
+  width:10px;
+  height:17px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss45 {
+  background:#004d00;
+  position:fixed;
+  left:-1044px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss46 {
+  background:#004d00;
+  position:fixed;
+  left:-1058px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss47 {
+  background:#004d00;
+  position:fixed;
+  left:-1070px;
+  bottom:145px;
+  width:10px;
+  height:10px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss48 {
+  background:#004d00;
+  position:fixed;
+  left:-1083px;
+  bottom:145px;
+  width:10px;
+  height:13px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss49 {
+  background:#004d00;
+  position:fixed;
+  left:-1205px;
+  bottom:145px;
+  width:10px;
+  height:44px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss50 {
+  background:#004d00;
+  position:fixed;
+  left:-1220px;
+  bottom:145px;
+  width:10px;
+  height:40px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss51 {
+  background:#004d00;
+  position:fixed;
+  left:-1270px;
+  bottom:145px;
+  width:10px;
+  height:56px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss51 {
+  background:#004d00;
+  position:fixed;
+  left:-1273px;
+  bottom:145px;
+  width:10px;
+  height:30px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss52 {
+  background:#004d00;
+  position:fixed;
+  left:-1300px;
+  bottom:145px;
+  width:10px;
+  height:15px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss53 {
+  background:#004d00;
+  position:fixed;
+  left:-1307px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss54 {
+  background:#004d00;
+  position:fixed;
+  left:-1350px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss55 {
+  background:#004d00;
+  position:fixed;
+  left:-1365px;
+  bottom:145px;
+  width:10px;
+  height:38px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss56 {
+  background:#004d00;
+  position:fixed;
+  left:-1377px;
+  bottom:145px;
+  width:10px;
+  height:30px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss57{
+  background:#004d00;
+  position:fixed;
+  left:-1600px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss58 {
+  background:#004d00;
+  position:fixed;
+  left:-1614px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss59 {
+  background:#004d00;
+  position:fixed;
+  left:-1630px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss60 {
+  background:#004d00;
+  position:fixed;
+  left:-1635px;
+  bottom:145px;
+  width:10px;
+  height:23px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss61 {
+  background:#004d00;
+  position:fixed;
+  left:-1648px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss62 {
+  background:#004d00;
+  position:fixed;
+  left:-1700px;
+  bottom:145px;
+  width:10px;
+  height:50px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss63 {
+  background:#004d00;
+  position:fixed;
+  left:-1715px;
+  bottom:145px;
+  width:10px;
+  height:43px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss64 {
+  background:#004d00;
+  position:fixed;
+  left:-1720px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grassss65 {
+  background:#004d00;
+  position:fixed;
+  left:-1780px;
+  bottom:145px;
+  width:10px;
+  height:34px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss66 {
+  background:#004d00;
+  position:fixed;
+  left:-1800px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss67 {
+  background:#004d00;
+  position:fixed;
+  left:-1813px;
+  bottom:145px;
+  width:10px;
+  height:24px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss68 {
+  background:#004d00;
+  position:fixed;
+  left:-1830px;
+  bottom:145px;
+  width:10px;
+  height:15px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss69 {
+  background:#004d00;
+  position:fixed;
+  left:-1845px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss70 {
+  background:#004d00;
+  position:fixed;
+  left:-1858px;
+  bottom:145px;
+  width:10px;
+  height:10px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss71 {
+  background:#004d00;
+  position:fixed;
+  left:-1900px;
+  bottom:145px;
+  width:10px;
+  height:50px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss72 {
+  background:#004d00;
+  position:fixed;
+  left:-1913px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss73 {
+  background:#004d00;
+  position:fixed;
+  left:-1960px;
+  bottom:145px;
+  width:10px;
+  height:58px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss74 {
+  background:#004d00;
+  position:fixed;
+  left:-1976px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.grasss75 {
+  background:#004d00;
+  position:fixed;
+  left:-2060px;
+  bottom:145px;
+  width:10px;
+  height:48px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras {
+  background:#004d00;
+  position:fixed;
+  left:0px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras2 {
+  background:#004d00;
+  position:fixed;
+  left:20px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras3 {
+  background:#004d00;
+  position:fixed;
+  left:300px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras4 {
+  background:#004d00;
+  position:fixed;
+  left:320px;
+  bottom:145px;
+  width:10px;
+  height:36px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras5 {
+  background:#004d00;
+  position:fixed;
+  left:335px;
+  bottom:145px;
+  width:10px;
+  height:42px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras6 {
+  background:#004d00;
+  position:fixed;
+  left:342px;
+  bottom:145px;
+  width:10px;
+  height:56px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras7 {
+  background:#004d00;
+  position:fixed;
+  left:400px;
+  bottom:145px;
+  width:10px;
+  height:60px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras8 {background:#004d00;
+  position:fixed;
+  left:418px;
+  bottom:145px;
+  width:10px;
+  height:67px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras9 {
+  background:#004d00;
+  position:fixed;
+  left:430px;
+  bottom:145px;
+  width:10px;
+  height:56px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras10 {
+  background:#004d00;
+  position:fixed;
+  left:445px;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras11 {
+  background:#004d00;
+  position:fixed;
+  left:458px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras12 {
+  background:#004d00;
+  position:fixed;
+  left:550px;
+  bottom:145px;
+  width:10px;
+  height:29px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras13 {
+  background:#004d00;
+  position:fixed;
+  left:570px;
+  bottom:145px;
+  width:10px;
+  height:40px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras14 {
+  background:#004d00;
+  position:fixed;
+  left:585px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras15{
+  background:#004d00;
+  position:fixed;
+  left:595px;
+  bottom:145px;
+  width:10px;
+  height:10px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras16 {
+  background:#004d00;
+  position:fixed;
+  left:605px;
+  bottom:145px;
+  width:10px;
+  height:15px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras17 {
+  background:#004d00;
+  position:fixed;
+  left:700px;
+  bottom:145px;
+  width:10px;
+  height:45px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras18 {
+  background:#004d00;
+  position:fixed;
+  left:718px;
+  bottom:145px;
+  width:10px;
+  height:50px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras19 {
+  background:#004d00;
+  position:fixed;
+  left:730px;
+  bottom:145px;
+  width:10px;
+  height:38px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras20 {
+  background:#004d00;
+  position:fixed;
+  left:743px;
+  bottom:145px;
+  width:10px;
+  height:25px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras21 {
+  background:#004d00;
+  position:fixed;
+  left:760x;
+  bottom:145px;
+  width:10px;
+  height:20px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras22 {
+  background:#004d00;
+  position:fixed;
+  left:900px;
+  bottom:145px;
+  width:10px;
+  height:58px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+.gras23 {
+  background:#004d00;
+  position:fixed;
+  left:915px;
+  bottom:145px;
+  width:10px;
+  height:40px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras24 {
+  background:#004d00;
+  position:fixed;
+  left:923px;
+  bottom:145px;
+  width:10px;
+  height:38px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras25 {
+  background:#004d00;
+  position:fixed;
+  left:940px;
+  bottom:145px;
+  width:10px;
+  height:35px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras26 {
+  background:#004d00;
+  position:fixed;
+  left:990px;
+  bottom:145px;
+  width:10px;
+  height:23px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras27 {
+  background:#004d00;
+  position:fixed;
+  left:1020px;
+  bottom:145px;
+  width:10px;
+  height:28px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras28 {
+  background:#004d00;
+  position:fixed;
+  left:1220px;
+  bottom:145px;
+  width:10px;
+  height:60px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras29 {
+  background:#004d00;
+  position:fixed;
+  left:1235px;
+  bottom:145px;
+  width:10px;
+  height:54px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras30 {
+  background:#004d00;
+  position:fixed;
+  left:1280px;
+  bottom:145px;
+  width:10px;
+  height:54px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.gras31 {
+  background:#004d00;
+  position:fixed;
+  left:1248px;
+  bottom:145px;
+  width:10px;
+  height:32px;
+  border:none;
+  animation: move 30s infinite;
+  animation-timing-function: linear;
+}
+
+.ground {
+  background:#004d00;
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:145px;
+}
+
+.runnerbase {
+  background:#004d00;
+  position:fixed;
+  width:100%;
+  height:250px;
+  bottom:0px;
+  left:0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes move {
+  0% {
+    transform:translateX(-10px);
+  }
+  100% {
+    transform:translateX(150vw);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    display:relative;
+    opacity:100;
+  }
+  2%{
+    display:none;
+    opacity:0;
+  }
+  82% {
+    opacity:0;
+  }
+  83% {
+    display:relative;
+  }
+  100% {
+    display:relative;
+    opacity:100;
+  }
+}
+
+@keyframes sun {
+  0% {
+    transform:translateX(-250px);
+  }
+
+  100% {
+    transform:translateX(120%)
+  }
+
+}
+
+@keyframes cloud {
+  0% {
+    transform:translateX(-250px);
+  }
+
+  100% {
+    transform:translateX(100%)
+  }
+
+}
