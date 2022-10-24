@@ -30,82 +30,90 @@
     position:fixed;
     bottom:0px;
     left:0px;
-    height: 50%;
+    height: 30%;
     }
 
     .film {
     position:absolute;
     margin-bottom:-1000px;
-    left:150px;
-    height: 140%;
+    left:355px;
+    height: 160%;
     z-index:-2;
     }
 
     .hearticon {
-      right:100px;
-      position: absolute;
+      position: relative;
       height: 50%;
       padding-top: 1px;
-      z-index:1;
     }
 
     .stereoicon {
-      right:200px;
-      position: absolute;
+      position: relative;
       height: 50%;
-      padding-top: 300px;
-      padding-bottom:100px;
+      top:400px;
     }
 
     .staricon {
-      right:100px;
-      position: absolute;
+      position: relative;
       height: 40%;
-      padding-top: 750px;
-      padding-bottom:20px;
-    }
-
-    .stats {
-      right:275px;
-      top:275px;
-      position: absolute;
-      color: white;
-      font-family: arial;
+      top:300px;
       z-index:2;
     }
 
+    .stats {
+      right:115px;
+      top:10px;
+      position: absolute;
+      color: white;
+      font-family: arial;
+    }
+
     .media {
-      right:375px;
-      top:550px;
+      right:114px;
+      top:400px;
       position: absolute;
       color: white;
       font-family: arial;
     }
 
     .cats {
-      right:240px;
-      top:900px;
+      right:90px;
       position: absolute;
       color: white;
       font-family: arial;
+      top:250px;
     }
 
     .intro {
       position:absolute;
       font-family:arial;
       color: white;
-      font-size:32pt;
-      left:30px;
+      font-size:16pt;
+      left:50px;
     }
 
     .big {
       line-height: 500px;
     }
 
-    .end {
-      font-family:arial;
-      color: white;
-      padding-bottom:400px;
+    .group1 {
+      right:50px;
+      position: absolute;
+      height: 70%;
+      z-index:3;
+    }
+
+    .group2 {
+      right:50px;
+      position: absolute;
+      height: 70%;
+    }
+
+    .group3 {
+      right:80px;
+      position: absolute;
+      height: 70%;
+      top:800px;
     }
 
     a:hover {
@@ -130,18 +138,22 @@
   <p class="pre">name: jennifer b<br>a project for HANDMADE WEB<br>june 20 22</p>
   <hr>
 
-  <p class="intro"> hey! welcome to jennifer's first handmade <br>website for web design. i am a <br> graphic design major coming onto my <br> senior year and while i have limited <br> background knowledge on coding, <br> website making is very exciting to me :-) <br> this site is exploreable through the sprites<br>on the right-hand side for you to <br>discover things about me ! </p>
+  <p class="intro"> hey! welcome to jennifer's <b>first handmade website for web design!</b> i am a <br> graphic design major coming onto my senior year and while i have limited <br> background knowledge on coding, website making is very exciting to me :-) <br> this site is exploreable through the sprites on the right-hand side for you to<br>discover things about me ! </p>
 
+    <div class="group1">
+      <a href="stats.html"><img src="assets/hearticon.gif" class="hearticon"> </a>
+      <div class="stats"><a href="stats.html"><b>STATS!</b></a></div>
+    </div>
 
-    <a href="stats.html"> <img src="assets/hearticon.gif" class="hearticon"> </a>
-    <div class="stats"><a href="stats.html"><b>STATS!</b></a></div>
+    <div class="group2">
+      <a href="media.html"><img src="assets/stereoicon.gif" class="stereoicon" ></a>
+      <div class="media"><a href="media.html"><b>MEDIA!</b></a></div>
+    </div>
 
-    <a href="media.html"><img src="assets/stereoicon.gif" class="stereoicon" ></a>
-    <div class="media"><a href="media.html"><b>MEDIA!</b></a></div>
-
-    <a href="cats.html"><img src="assets/staricon.gif" class="staricon" ></a>
-    <div class="cats"><a href="cats.html"><b>CATS!</b></a></div>
-
+    <div class="group3">
+  <a href="cats.html"><img src="assets/staricon.gif" class="staricon" ></a>
+      <div class="cats"><a href="cats.html"><b>CATS!</b></a></div>
+    </div>
   <img src="assets/filmstrip.png" class="film">
   <img src="assets/broadst.png" class="broadst">
 
