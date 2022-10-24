@@ -38,13 +38,13 @@ p {
 }
 
 .random-list {
-    width:100%; 
+    width:100%;
     height:100%;
     position:relative;
   }
 
 .ny1 {
-    position:absolute; 
+    position:absolute;
     padding:5px;
     display:none;
     width:250px;
@@ -135,7 +135,7 @@ p {
 
 #intro:hover {
     background:yellowgreen;
-    color:darkred; 
+    color:darkred;
     transform:scale(1.1);
     font-style:oblique;
     margin-bottom:5px;
@@ -529,4 +529,3 @@ p {
         opacity: 1;
     }
 }
-
