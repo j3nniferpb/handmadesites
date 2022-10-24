@@ -4,7 +4,7 @@ body {
     max-width:100%;
     max-height:100%;
   }
-  
+
 .draggable {
     position: fixed;
     display:flex;
@@ -25,13 +25,13 @@ body {
 }
 
 .random-list {
-  width:100%; 
+  width:100%;
   height:100%;
   position:relative;
 }
 
-.random { 
-  position:absolute; 
+.random {
+  position:absolute;
   padding:5px;
   background: white;
   display:none;
@@ -179,12 +179,12 @@ body {
 }
 
 #pic23 {
-  max-width:250px;
+  max-height:250px;
   transform:rotate(-6deg);
 }
 
 #pic24 {
-  max-width:250px;
+  max-height:250px;
   transform:rotate(6deg);
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 #pic30 {
-  max-width:250px;
+  max-height:250px;
   transform:rotate(4deg);
 }
 
@@ -238,7 +238,7 @@ body {
 }
 
 #pic35 {
-  max-width:250px;
+  max-height:250px;
   transform:rotate(-4deg);
 }
 
@@ -254,9 +254,69 @@ body {
 
 #pic38 {
   max-width:250px;
-  transform:rotate(3deg)
+  transform:rotate(3deg);
 }
 
 #pic39 {
     max-width:250px;
+}
+
+#pic40 {
+    max-width:250px;
+}
+
+#pic41 {
+  max-width:250px;
+  transform:rotate(3deg);
+}
+
+#pic42 {
+  max-height:250px;
+  transform:rotate(-1deg);
+}
+
+#pic43 {
+  max-width:250px;
+  transform:rotate(1deg);
+
+}
+
+#pic44 {
+  max-width:250px;
+}
+
+#pic45 {
+  max-width:250px;
+  transform:rotate(-2deg);
+
+}
+
+#pic46 {
+  max-height:250px;
+}
+
+#pic47 {
+  max-width:250px;
+  transform:rotate(3deg);
+
+}
+
+#pic48 {
+  max-width:250px;
+  transform:rotate(1deg);
+}
+
+#pic49 {
+  max-height:250px;
+  transform:rotate(-3deg);
+}
+
+#pic50 {
+  max-width:250px;
+  transform:rotate(2deg);
+}
+
+#pic51 {
+  max-width:250px;
+  transform:rotate(-2deg);
 }
