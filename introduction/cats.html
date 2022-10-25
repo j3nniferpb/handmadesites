@@ -59,23 +59,34 @@
   }
 
   .meeko {
-      width:100%;
-      height:auto;
+      width:50%;
+      left:50%;
       z-index: 0;
+      padding-left:30px;
   }
 
   .miso {
-    width:100%;
+    width:50%;
+    position:relative;
+    right:30px;
     height:auto;
-    z-index: 0;
+    z-index: 1;
   }
 
-  .meekcap {
+  .meekcap1 {
     z-index:1;
     font-size:40px;
-    position: static;
-    left:300px;
-    top:300px;
+    position: relative;
+    left:30px;
+  }
+
+  .meekcap2 {
+    z-index:1;
+    font-size:40px;
+    position: absolute;
+    top:1600px;
+    left:600px;
+    padding-bottom:70px;
   }
 
   </style>
@@ -83,12 +94,12 @@
 
 <body>
 <h4 align="center" padding-top="100px"><i>here r my cats!</i></h4>
-<p class="pre">(my cats)</p>
+<p class="pre">in an attempt to name our cats something my parents, non-native English speakers,<br>could say, we wanted to name our cats puns that translated. Miso came<br>first, named mi xao, or translated meaning stirfry nooodles. Meeko came after<br>and we call her mi kho, literally translated into dry noodles but what Vietnamese<br>people call instant/cup noodles. u can skip duolingo today you're welcome</p>
 <hr>
 <img src="assets/meeko.png" class="meeko">
-<p class="meekcap">this is meeko (mi kho)↗</p>
-<img src="assets/miso.jpg" class="miso">
-<p class="meekcap" align="right">↖this is miso (mi xao)</p>
+<p class="meekcap1">this is meeko (mi kho)↗</p>
+<img src="assets/IMG_7855.png" class="miso" align="right">
+<p class="meekcap2">↖this is miso (mi xao)</p>
 
 </body>
 
